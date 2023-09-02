@@ -1,0 +1,62 @@
+
+
+namespace Exercício
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite seu nome:");
+            string Nome = (Console.ReadLine());
+
+            Console.WriteLine("Informe sua idade:");
+            int Idade = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine("Digite outro nome:");
+            string Nome2 = (Console.ReadLine());
+
+            Console.WriteLine("Informe sua idade:");
+            int Idade2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(" ");
+
+            if (Idade > Idade2)
+            {
+                Console.WriteLine(Nome + " é mais velho(a)");
+            }
+
+
+            if (Idade2 > Idade)
+            {
+                Console.WriteLine(Nome2 + " é mais velho(a)");
+            }
+
+            if (Idade == Idade2)
+            {
+                Console.WriteLine("Ambos tem a mesma idade");
+            }
+
+            if (Idade < 18)
+            {
+                Console.WriteLine(Nome + " é menor de idade");
+            }
+             
+            if (Idade2 < 18)
+            {
+                Console.WriteLine(Nome2 + " é menor de idade");
+            }
+
+            Console.ReadKey();
+
+
+        }
+
+
+
+    }
+
+
+
+}
